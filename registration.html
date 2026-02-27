@@ -1,27 +1,76 @@
-<form action="#" method="post">
-    <label>Name:</label>
-    <input type="text" name="name" required><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - UET Portfolio</title>
+    <style>
+        nav a.active {
+            background-color: #ff9800; /* Highlight current page */
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
 
-    <label>Registration Number:</label>
-    <input type="text" name="reg_no" required><br>
+        nav a {
+            text-decoration: none;
+            color: #0056b3;
+            padding: 8px 15px;
+        }
 
-    <label>Email:</label>
-    <input type="email" name="email" required><br>
+        nav a:hover {
+            background-color: #003d80;
+            color: white;
+        }
+    </style>
+</head>
+<body>
 
-    <label>Password:</label>
-    <input type="password" name="password" required><br>
+<header>
+    <h1>UET Web Technology Portfolio</h1>
+</header>
 
-    <label>Course:</label>
-    <select name="course">
-        <option>web technology</option>
-        <option>data science</option>
-    </select><br>
+<!-- Navigation Bar goes here -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="registration.html" class="active">Registration</a> <!-- Active page -->
+    <a href="navigation.html">Navigation</a>
+</nav>
 
-    <label>Semester:</label>
-    <input type="radio" name="semester" value="Spring">Spring
-    <input type="radio" name="semester" value="Fall">Fall<br>
+<!-- Main content -->
+<main>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label>Name:</label>
+        <input type="text" name="name" required><br>
 
-    <input type="checkbox" name="terms" required> I agree to terms<br>
+        <label>Registration Number:</label>
+        <input type="text" name="reg_no" required><br>
 
-    <button type="submit">Submit</button>
-</form>
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br>
+
+        <label>Course:</label>
+        <select name="course">
+            <option>Web Technology</option>
+            <option>Data Science</option>
+        </select><br>
+
+        <label>Semester:</label>
+        <input type="radio" name="semester" value="Spring">Spring
+        <input type="radio" name="semester" value="Fall">Fall<br>
+
+        <input type="checkbox" name="terms" required> I agree to terms<br>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+</body>
+</html>

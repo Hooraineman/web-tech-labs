@@ -1,1 +1,0 @@
-In this lab, I learned how to use Git to track changes, work with branches, and push updates to GitHub. It was helpful to understand merging and branch isolation. I also practiced creating files, adding comments, and managing the repository effectively.

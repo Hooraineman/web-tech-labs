@@ -1,0 +1,126 @@
+.solid{
+background:lightblue;
+height:120px;
+}
+
+.imagebg{
+background-image:url("../images/backgrounds/image.png");
+background-repeat:repeat;
+height:120px;
+}
+
+.linear{
+background:linear-gradient(to right, red, yellow);
+height:120px;
+}
+
+.radial{
+background:radial-gradient(circle, blue, white);
+height:120px;
+}
+/* ===== Task 9: CSS Transform Gallery ===== */
+
+.transform-gallery{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+.box{
+    width:150px;
+    height:150px;
+    background:#007bff;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    transition:transform 0.5s;
+}
+.rotate:hover{
+    transform:rotate(45deg);
+}
+.scale:hover{
+    transform:scale(1.4);
+}
+.translate:hover{
+    transform:translate(30px, 20px);
+}
+.origin{
+    transform-origin:top left;
+}
+
+.origin:hover{
+    transform:rotate(45deg);
+}
+.combo:hover{
+    transform:rotate(20deg) scale(1.2) translateY(-20px);
+}
+.threed:hover{
+    transform:rotateY(180deg);
+}
+/* ===== Task 10: Advanced Effects Showcase ===== */
+
+.gradient-text{
+    font-size:40px;
+    background:linear-gradient(to right, blue, purple);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.custom-check input{
+    display:none;
+}
+.checkmark{
+    width:20px;
+    height:20px;
+    border:2px solid black;
+    display:inline-block;
+    margin-right:10px;
+}
+.custom-check input:checked + .checkmark{
+    background:green;
+}
+.custom-radio input{
+    display:none;
+}
+.radiomark{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:2px solid black;
+    display:inline-block;
+    margin-right:10px;
+}
+
+.custom-radio input:checked + .radiomark{
+    background:blue;
+}
+.loader{
+    border:6px solid #eee;
+    border-top:6px solid blue;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{ transform:rotate(0deg); }
+    100%{ transform:rotate(360deg); }
+}
+.image-text{
+    font-size:60px;
+    background:url("../images/backgrounds/bg1.jpg");
+    background-size:cover;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.shadow-box{
+    width:200px;
+    padding:20px;
+    background:white;
+    box-shadow:
+        0 5px 10px rgba(0,0,0,0.2),
+        0 10px 20px rgba(0,0,0,0.15),
+        0 15px 30px rgba(0,0,0,0.1);
+}

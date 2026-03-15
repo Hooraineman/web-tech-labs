@@ -1,0 +1,50 @@
+/* css/course.css */
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.course-table th, .course-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.course-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.course-table tr:hover {
+    background-color: #d1e7fd;
+}
+.course-table td.Core {
+    background-color: #cce5ff;
+}
+.course-table td.Elective {
+    background-color: #d4edda;
+}
+@media (max-width: 768px) {
+    .course-table, 
+    .course-table tr, 
+    .course-table td, 
+    .course-table th {
+        display: block;
+        width: 100%;
+    }
+    .course-table tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+    }
+    .course-table td, .course-table th {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    }
+    .course-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-align: left;
+        white-space: nowrap;
+    }
+}

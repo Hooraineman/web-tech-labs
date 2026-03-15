@@ -1,0 +1,53 @@
+/* css/portfolio.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #007bff;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+section {
+    margin-bottom: 40px;
+}
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    background: #007bff;
+    padding: 10px;
+    margin: 0;
+}
+nav ul li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+nav ul li a:hover {
+    background: #0056b3;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}

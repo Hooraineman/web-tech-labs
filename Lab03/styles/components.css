@@ -1,0 +1,320 @@
+/* ===== Task 1: CSS Selectors Practice ===== */
+
+/* BASIC SELECTORS */
+p {
+    color: blue;
+}
+.intro {
+    font-weight: bold;
+}
+#special {
+    color: red;
+}
+* {
+    box-sizing: border-box;
+}
+h1, li {
+    color: green;
+}
+
+/* ATTRIBUTE SELECTORS */
+input[type="text"] {
+    border: 2px solid blue;
+}
+input[type="password"] {
+    border: 2px solid red;
+}
+a[href] {
+    color: purple;
+}
+
+/* COMBINATORS */
+div p {
+    color: orange;
+}
+ul > li {
+    list-style: square;
+}
+h1 + p {
+    background: #ddd;
+}
+h1 ~ p {
+    font-style: italic;
+}
+
+/* PSEUDO CLASSES */
+a:hover {
+    color: red;
+}
+li:first-child {
+    color: blue;
+}
+li:last-child {
+    color: green;
+}
+li:nth-child(2) {
+    color: purple;
+}
+input:focus {
+    background: lightyellow;
+}
+
+/* PSEUDO ELEMENTS */
+p::first-letter {
+    font-size: 28px;
+}
+p::first-line {
+    color: brown;
+}
+
+/* ===== Task 4: Image Styling Portfolio ===== */
+.gallery img {
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+.rounded {
+    border-radius: 15px;
+}
+.circular {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.border-shadow {
+    border: 3px solid #333;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+.hover-effect:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #666;
+}
+.filter-grayscale {
+    filter: grayscale(100%);
+}
+.filter-grayscale:hover {
+    filter: grayscale(0%);
+}
+.image-overlay {
+    position: relative;
+    display: inline-block;
+}
+.image-overlay img {
+    width: 200px;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image-overlay:hover .overlay-text {
+    opacity: 1;
+}
+/* ===== Task 5: Button Styling Collection ===== */
+.btn {
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.small {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.medium {
+    font-size: 16px;
+}
+
+.large {
+    font-size: 22px;
+    padding: 14px 28px;
+}
+.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.success {
+    background-color: #28a745;
+    color: white;
+}
+
+.danger {
+    background-color: #dc3545;
+    color: white;
+}
+.round {
+    border-radius: 50px;
+    background-color: purple;
+    color: white;
+}
+.gradient {
+    background: linear-gradient(to right, blue, purple);
+    color: white;
+}
+.shadow {
+    background-color: black;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+.btn:hover {
+    transform: scale(1.08);
+}
+.btn:focus {
+    outline: 3px solid orange;
+}
+.disabled {
+    background-color: gray;
+    color: white;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+/* ===== Task 6: Form Styling ===== */
+
+.register-form{
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+.register-form label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+.register-form input,
+.register-form select,
+.register-form textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:2px solid #ccc;
+    border-radius:5px;
+}
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus{
+    border-color:#007bff;
+    background:#eef6ff;
+    outline:none;
+}
+.register-form select{
+    background:white;
+}
+.error{
+    border-color:red;
+    background:#ffe6e6;
+}
+.success{
+    border-color:green;
+    background:#e6ffe6;
+}
+.register-form button{
+    margin-top:15px;
+}
+/* ===== Task 7: Card Component Design ===== */
+
+.card-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+.card{
+    width:250px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img{
+    width:100%;
+    border-radius:8px;
+}
+.card h3{
+    margin:10px 0;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+/* ===== Task 8: Navigation Menu Styling ===== */
+.navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    background:#333;
+    display:flex;
+}
+
+.navbar ul li{
+    position:relative;
+}
+
+.navbar ul li a{
+    display:block;
+    padding:14px 20px;
+    color:white;
+    text-decoration:none;
+    transition:background 0.3s;
+}
+.navbar ul li a:hover{
+    background:#555;
+}
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    background:#444;
+    list-style:none;
+    padding:0;
+    min-width:150px;
+}
+
+.dropdown-menu li a{
+    padding:10px;
+    display:block;
+}
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+.vertical-menu{
+    width:200px;
+}
+
+.vertical-menu a{
+    display:block;
+    padding:12px;
+    background:#eee;
+    color:black;
+    text-decoration:none;
+    border-bottom:1px solid #ccc;
+    transition:background 0.3s;
+}
+.vertical-menu a:hover{
+    background:#ccc;
+}
+.vertical-menu a.active{
+    background:#007bff;
+    color:white;
+}

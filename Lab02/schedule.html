@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Course Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/course.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Weekly Course Schedule</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="schedule.html" class="active">Schedule</a>
+        <a href="registration.html">Registration</a>
+        <a href="navigation.html">Navigation</a>
+    </nav>
+
+    <main>
+        <table class="course-table">
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+
+            <tr>
+                <td data-label="Time">9:00 - 10:00</td>
+                <td data-label="Monday" class="Core">web technology</td>
+                <td data-label="Tuesday" class="Elective">english</td>
+                <td data-label="Wednesday" class="Core">programming</td>
+                <td data-label="Thursday" class="Elective">data science</td>
+                <td data-label="Friday" class="Core">Physics</td>
+            </tr>
+
+            <tr>
+                <td data-label="Time">10:00 - 11:00</td>
+                <td data-label="Monday" class="Elective">English</td>
+                <td data-label="Tuesday" class="Core">CS Theory</td>
+                <td data-label="Wednesday" class="Elective">English</td>
+                <td data-label="Thursday" class="Core">Mathematics</td>
+                <td data-label="Friday" class="free">Free</td>
+            </tr>
+
+            <tr>
+                <td data-label="Time" colspan="6" class="lunch">Lunch Break</td>
+            </tr>
+
+            <tr>
+                <td data-label="Time">1:00 - 2:00</td>
+                <td data-label="Monday" class="Core">Programming Lab</td>
+                <td data-label="Tuesday" class="Core">Physics Lab</td>
+                <td data-label="Wednesday" class="Core">Programming Lab</td>
+                <td data-label="Thursday" class="Core">CS Theory</td>
+                <td data-label="Friday" class="Elective">Seminar</td>
+            </tr>
+        </table>
+    </main>
+
+</body>
+</html>

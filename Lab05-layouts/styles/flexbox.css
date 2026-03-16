@@ -1,0 +1,32 @@
+.nav{
+display:flex;
+justify-content:space-between;
+background:black;
+color:white;
+padding:15px;
+}
+
+.menu a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.card{
+flex:1 1 30%;
+background:#eee;
+padding:20px;
+display:flex;
+flex-direction:column;
+}
+
+.card button{
+margin-top:auto;
+}

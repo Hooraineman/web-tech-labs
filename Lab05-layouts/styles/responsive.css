@@ -1,23 +1,24 @@
-git commit -m "Add lab05 layouts assignment"git commit -m "Add lab05 layouts assignment"@media (min-width:768px){
-body{
-font-size:18px;
-}
-}
 
+body{
+  font-size:16px;
+}
+@media (min-width:768px){
+  body{
+    font-size:18px;
+  }
+}
 @media (min-width:1024px){
-body{
-font-size:20px;
+  body{
+    font-size:20px;
+  }
 }
-}
-
 @media (min-width:1200px){
-body{
-font-size:22px;
+  body{
+    font-size:22px;
+  }
 }
-}
-
 @media (min-width:1400px){
-body{
-font-size:24px;
-}
+  body{
+    font-size:24px;
+  }
 }

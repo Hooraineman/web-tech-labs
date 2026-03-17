@@ -1,29 +1,17 @@
-# CS224L Web Technologies Labs
+# CS224L Web Labs
 
-This repository contains my lab work for CS224L Web Technologies.
+This repository contains the web labs for CS224L.
 
-## Lab02
- Personal Portfolio Styling
- Course Schedule Styling
- Tasks 11–13
- Folder: `Lab02/`
+## Labs Included
 
-## Lab03
- Advanced CSS Features
- Button Styling, Forms, Cards, Navigation Menus
- Tasks 1–10
- Folder: `Lab03/`
- 
-## Lab05
-Display properties
-Float layouts
-Positioning
-Flexbox navigation and cards
-CSS Grid gallery
-Responsive layouts
-Media queries
-Dark mode support 
-## How to View
-Open the root index.html for a landing page with links to each lab:
+1. **Lab 02: Portfolio & Schedule**
+   - Path: `Lab02/index.html`
+   - Features: Personal portfolio, schedule, registration, contact pages.
 
-https://Hooraineman.github.io/web-tech-labs/
+2. **Lab 03: Advanced CSS**
+   - Path: `Lab03/index.html`
+   - Features: CSS exercises including selectors, typography, backgrounds, and image styling.
+
+3. **Lab 05: Layout Techniques**
+   - Path: `Lab05-layouts/index.html`
+   - Features: CSS layout exercises including display, float, position, flexbox, grid, media queries, and sample layouts.

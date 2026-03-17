@@ -1,24 +1,9 @@
+/* Landing Page (Task 15) */
+.landing-hero { padding: 50px 20px; text-align: center; }
+.landing-hero h1 { font-size: 2em; }
+.landing-hero p { font-size: 1.2em; }
 
-body{
-  font-size:16px;
-}
-@media (min-width:768px){
-  body{
-    font-size:18px;
-  }
-}
-@media (min-width:1024px){
-  body{
-    font-size:20px;
-  }
-}
-@media (min-width:1200px){
-  body{
-    font-size:22px;
-  }
-}
-@media (min-width:1400px){
-  body{
-    font-size:24px;
-  }
+@media (min-width: 768px) {
+  .landing-hero h1 { font-size: 3em; }
+  .landing-hero p { font-size: 1.5em; }
 }

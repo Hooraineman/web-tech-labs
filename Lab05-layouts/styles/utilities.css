@@ -1,31 +1,25 @@
-/* Utility Classes */
-.text-center{
-text-align:center;
+/* Show/Hide Utilities */
+.show-mobile { display: none; }
+.show-desktop { display: block; }
+
+@media (max-width: 768px) {
+  .show-mobile { display: block; }
+  .show-desktop { display: none; }
 }
 
-.mt-1{
-margin-top:10px;
-}
+/* Spacing Utilities */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
 
-.mt-2{
-margin-top:20px;
-}
+/* Text Alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 
-.p-1{
-padding:10px;
-}
-
-.p-2{
-padding:20px;
-}
-.hide-mobile{
-display:none;
-}
-
-@media(min-width:768px){
-
-.hide-mobile{
-display:block;
-}
-
-}
+/* Flexbox Utilities */
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }

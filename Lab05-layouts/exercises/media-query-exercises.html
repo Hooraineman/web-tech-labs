@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Media Query Exercises</title>
-
-<link rel="stylesheet" href="../styles/base.css">
-<link rel="stylesheet" href="../styles/media-queries.css">
-<link rel="stylesheet" href="../styles/responsive.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Exercises</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/media-queries.css">
 </head>
-
 <body>
+  <header>
+    <h1>Breakpoint Practice</h1>
+  </header>
+  <main>
+    <p>Resize your browser to see different breakpoints in action.</p>
+    <div class="breakpoint-indicator">Current Width: <span id="width"></span>px</div>
+  </main>
 
-<h1>Media Query Demonstration</h1>
-
-<p>
-Resize the browser window to see how the layout and text size changes.
-</p>
-
-<div class="box">
-Responsive Box
-</div>
-
+  <script>
+    const widthSpan = document.getElementById('width');
+    function updateWidth() {
+      widthSpan.textContent = window.innerWidth;
+    }
+    window.addEventListener('resize', updateWidth);
+    updateWidth();
+  </script>
 </body>
 </html>

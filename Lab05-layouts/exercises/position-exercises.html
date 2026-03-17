@@ -1,39 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Positioning Exercises</title>
-
-<link rel="stylesheet" href="../styles/base.css">
-<link rel="stylesheet" href="../styles/position.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Challenge</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/position.css">
+  <link rel="stylesheet" href="../styles/media-queries.css">
 </head>
-
 <body>
+  <header class="fixed-header">
+    <h1>Fixed Header</h1>
+  </header>
 
-<header class="fixed-header">
-Fixed Header
-</header>
+  <main class="content">
+    <button id="openModal">Open Modal</button>
+    <aside class="sticky-sidebar">Sticky Sidebar</aside>
+  </main>
 
-<div style="margin-top:80px">
+  <div class="modal">
+    <p>Modal Content</p>
+    <button id="closeModal">Close</button>
+  </div>
 
-<div class="sticky">
-Sticky Sidebar
-</div>
-
-<button onclick="showModal()">Open Modal</button>
-
-</div>
-
-<div class="modal" id="modal">
-Modal Box
-</div>
-
-<script>
-function showModal(){
-document.getElementById("modal").style.display="block"
-}
-</script>
-
+  <script>
+    const modal = document.querySelector('.modal');
+    document.getElementById('openModal').onclick = () => modal.style.display = 'block';
+    document.getElementById('closeModal').onclick = () => modal.style.display = 'none';
+  </script>
 </body>
 </html>

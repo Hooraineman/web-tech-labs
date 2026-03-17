@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Float Magazine Layout</title>
-
-<link rel="stylesheet" href="../styles/base.css">
-<link rel="stylesheet" href="../styles/float.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Float Layout</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/float.css">
+  <link rel="stylesheet" href="../styles/media-queries.css">
 </head>
-
 <body>
-
-<header class="header">
-<h1>Magazine Layout</h1>
-</header>
-
-<div class="container">
-
-<aside class="sidebar">
-<h2>Sidebar</h2>
-<p>Latest news</p>
-</aside>
-
-<main class="content">
-
-<img src="https://picsum.photos/200" class="image">
-
-<p>
-This is a magazine style layout where image floats and text wraps around it.
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-</p>
-
-</main>
-
-</div>
-
+  <header class="header">
+    <h1>Magazine Float Layout</h1>
+  </header>
+  <div class="container">
+    <main class="main-content">
+      <article class="article">
+        <h2>Article Title</h2>
+        <img src="https://via.placeholder.com/300x200" alt="Sample Image" class="float-img">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus nec leo cursus feugiat.</p>
+      </article>
+      <aside class="sidebar">
+        <h3>Sidebar</h3>
+        <p>Links, ads, or additional info here.</p>
+      </aside>
+    </main>
+  </div>
 </body>
 </html>

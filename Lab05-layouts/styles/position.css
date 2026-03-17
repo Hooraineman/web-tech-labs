@@ -1,27 +1,29 @@
-.fixed-header{
-position:fixed;
-top:0;
-width:100%;
-background:black;
-color:white;
-padding:20px;
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #444;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
 }
 
-.sticky{
-position:sticky;
-top:20px;
-background:lightblue;
-padding:20px;
-width:200px;
+.sticky-sidebar {
+  position: sticky;
+  top: 60px;
+  background: #ccc;
+  padding: 10px;
 }
 
-.modal{
-display:none;
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-background:white;
-padding:40px;
-border:2px solid black;
+.modal {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #333;
+  display: none;
+  z-index: 2000;
 }

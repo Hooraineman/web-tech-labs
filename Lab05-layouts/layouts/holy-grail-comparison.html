@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Holy Grail Layout</title>
-
-<link rel="stylesheet" href="../styles/base.css">
-<link rel="stylesheet" href="../styles/grid.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail Layout</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/float.css">
+  <link rel="stylesheet" href="../styles/flexbox.css">
+  <link rel="stylesheet" href="../styles/grid.css">
+  <link rel="stylesheet" href="../styles/media-queries.css">
 </head>
-
 <body>
 
-<header class="hg-header">
-Header
-</header>
+  <h1>Holy Grail Layout Comparison</h1>
 
-<div class="hg-container">
-
-<aside class="hg-left">
-Left Sidebar
-</aside>
-
-<main class="hg-main">
-Main Content
-</main>
-
-<aside class="hg-right">
-Right Sidebar
-</aside>
-
-</div>
-
-<footer class="hg-footer">
-Footer
-</footer>
+  <!-- Float Version -->
+  <div class="holy-grail float-version">
+    <header>Header</header>
+    <div class="content-area">
+      <aside class="left">Left Sidebar</aside>
+      <main>Main Content</main>
+      <aside class="right">Right Sidebar</aside>
+    </div>
+    <footer>Footer</footer>
+  </div>
 
 </body>
 </html>

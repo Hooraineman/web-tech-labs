@@ -1,32 +1,86 @@
-.nav{
-display:flex;
-justify-content:space-between;
-background:black;
-color:white;
-padding:15px;
+/* Navigation */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
 }
 
-.menu a{
-color:white;
-margin-left:20px;
-text-decoration:none;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-.cards{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-margin-top:20px;
+.nav-links li a {
+  color: white;
+  text-decoration: none;
 }
 
-.card{
-flex:1 1 30%;
-background:#eee;
-padding:20px;
-display:flex;
-flex-direction:column;
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
-.card button{
-margin-top:auto;
+/* Sidebar nav */
+.sidebar-nav {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 15px;
+  float: left;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+/* Cards (Task 5) */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  flex: 1 1 calc(33.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.card button {
+  margin-top: auto;
+}
+
+/* Forms (Task 12) */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-section {
+  flex: 1 1 calc(50% - 15px);
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+  width: 100%;
+  padding: 8px;
 }

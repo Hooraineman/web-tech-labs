@@ -1,24 +1,38 @@
-.sidebar{
-float:left;
-width:30%;
-background:#eee;
-padding:20px;
+/* Float-based layouts */
+.main-content {
+  overflow: hidden;
 }
 
-.content{
-float:left;
-width:70%;
-padding:20px;
+.article {
+  float: left;
+  width: 70%;
 }
 
-.image{
-float:right;
-margin:10px;
-width:200px;
+.sidebar {
+  float: right;
+  width: 28%;
+  background-color: #eee;
+  padding: 10px;
 }
 
-.header{
-background:#333;
-color:white;
-padding:20px;
+.float-img {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+/* Holy Grail Float Version */
+.holy-grail .content-area {
+  overflow: hidden;
+}
+.holy-grail .left {
+  float: left;
+  width: 20%;
+}
+.holy-grail main {
+  float: left;
+  width: 60%;
+}
+.holy-grail .right {
+  float: right;
+  width: 20%;
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Photo Gallery</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Gallery container */
+    .photo-gallery {
+      column-count: 3;          /* 3 columns desktop */
+      column-gap: 15px;
+      padding: 15px;
+    }
+
+    /* Individual photo card */
+    .photo {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* Images */
+    .photo img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .photo img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive breakpoints */
+    @media (max-width: 1024px) {
+      .photo-gallery {
+        column-count: 2;      /* 2 columns tablet */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .photo-gallery {
+        column-count: 1;      /* 1 column mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Responsive Photo Gallery</h1>
+</header>
+
+<main class="photo-gallery">
+  <div class="photo">
+    <img src="https://picsum.photos/id/1015/600/400" alt="Nature 1">
+  </div>
+  <div class="photo">
+    <img src="https://picsum.photos/id/1025/600/400" alt="Beach">
+  </div>
+  <div class="photo">
+    <img src="https://picsum.photos/id/1035/600/400" alt="Mountain">
+  </div>
+  <div class="photo">
+    <img src="https://picsum.photos/id/1045/600/400" alt="Forest Night">
+  </div>
+  <div class="photo">
+    <img src="https://picsum.photos/id/1055/600/400" alt="Savannah">
+  </div>
+  <div class="photo">
+    <img src="https://picsum.photos/id/1065/600/400" alt="Waterfall">
+  </div>
+</main>
+
+</body>
+</html>

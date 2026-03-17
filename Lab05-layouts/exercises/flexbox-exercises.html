@@ -1,51 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Flexbox Exercises</title>
-
-<link rel="stylesheet" href="../styles/base.css">
-<link rel="stylesheet" href="../styles/flexbox.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Exercises</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/flexbox.css">
+  <link rel="stylesheet" href="../styles/media-queries.css">
 </head>
-
 <body>
 
-<nav class="nav">
+  <!-- Task 4: Flexbox Navigation -->
+  <nav class="main-nav">
+    <div class="logo">MySite</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div>
+  </nav>
 
-<div>Logo</div>
+  <aside class="sidebar-nav">
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </aside>
 
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
-</div>
+  <main class="content">
+    <h1>Welcome to Flexbox Exercises!</h1>
+    <p>This section contains navigation and form examples.</p>
 
-</nav>
+    <!-- Task 12: Flexbox Form -->
+    <form class="form-container">
+      <div class="form-section">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name">
+      </div>
+      <div class="form-section">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email">
+      </div>
+      <div class="form-section">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your Message"></textarea>
+      </div>
+      <div class="form-section">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
 
-<h2>Flexbox Cards</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Card 1</h3>
-<p>Some text</p>
-<button>Buy</button>
-</div>
-
-<div class="card">
-<h3>Card 2</h3>
-<p>More text</p>
-<button>Buy</button>
-</div>
-
-<div class="card">
-<h3>Card 3</h3>
-<p>More text</p>
-<button>Buy</button>
-</div>
-
-</div>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>

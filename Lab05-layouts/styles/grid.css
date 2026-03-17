@@ -1,14 +1,68 @@
-.gallery{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-
-gap:10px;
-
+/* Photo Gallery (Task 6) */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 15px;
 }
 
-.gallery img{
-width:100%;
-display:block;
+.photo img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+/* E-commerce Grid (Task 8) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Dashboard Grid (Task 9) */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+}
+
+.stat-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Responsive CSS Grid Magazine (Task 11) */
+.magazine-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+/* Portfolio Grid (Task 13) */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+}
+
+/* Responsive Data Table (Task 14) */
+.data-table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.data-card {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
